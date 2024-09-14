@@ -1,0 +1,22 @@
+{
+  "name": "iu-wsb/iu-web-framework-components",
+  "description": "A lib based on iu-rsb/structured-data-nodes; it helps build iu web framework components easily",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Qiwen Zhu",
+      "email": "qiwzhu@iu.edu"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Edu\\IU\\WSB\\IUWebFrameworkComponents\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "iu-vpcm-dc/wcms-webservice": "dev-main",
+    "iu-webtech/wcms-generic-tool": "dev-main",
+    "iu-rsb/structured-data-nodes": "dev-main"
+  }
+}
