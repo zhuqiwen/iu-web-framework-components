@@ -127,9 +127,11 @@ trait ChunkTraits{
     public function getChunkType():string
     {
         $reflection = new ReflectionClass($this);
-
-        $type = preg_split('/(?=[A-Z])/', $reflection->getShortName());
+        $type = str_replace('Chunk', '', $reflection->getShortName());
+        //split "FullWidthHeader" and alike into "Full Width Header"
+        $type = preg_split('/(?=[A-Z])/', $type);
         $type = implode(' ', $type);
+
         return trim($type);
     }
 
