@@ -14,4 +14,9 @@ trait ComponentTraits{
         return $this->dataNode;
 
     }
+
+    public function getNodeArray():array
+    {
+        return $this->dataNode->getNodeArray();
+    }
 }
